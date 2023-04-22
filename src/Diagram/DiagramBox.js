@@ -11,7 +11,7 @@ export default function DiagramBox({ schema }) {
 
   const handleLessZoom = () => {
     setScale((prev) => {
-      if (prev !== 0.2) {
+      if (prev > 0.3) {
         return prev - 0.2;
       }
       return prev;
